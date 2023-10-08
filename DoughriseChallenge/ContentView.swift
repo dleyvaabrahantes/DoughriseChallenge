@@ -36,7 +36,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .padding(.horizontal,30)
+            .padding(.horizontal,25)
             .padding(.bottom, edges?.bottom == 0 ? 15 : edges?.bottom)
             .background(Color.white)
         }

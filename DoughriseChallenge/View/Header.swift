@@ -35,15 +35,15 @@ struct Header: View {
                 
             }
             .offset(y:20)
-            .padding(.horizontal)
+            .padding(.horizontal,25)
         }
         .cornerRadius(16)
-        .frame(height: 200)
+        .frame(height: 160)
     }
 }
 
 struct Header_Previews: PreviewProvider {
     static var previews: some View {
-        Header()
+        Home()
     }
 }

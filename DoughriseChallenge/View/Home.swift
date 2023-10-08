@@ -27,7 +27,7 @@ struct Home: View {
                     })
                     .frame(height: 500)
                     .cornerRadius(20)
-                    .padding(.horizontal)
+                    .padding(.horizontal,25)
                     .shadow(radius: 8)
                     .offset(y:-50)
                 Spacer()
@@ -77,8 +77,8 @@ struct ExpandableFAB : View {
                 } label: {
                     Image(systemName: "plus")
                         .resizable()
-                        .frame(width: 35, height: 25)
-                        .padding(18)
+                        .frame(width: 18, height: 18)
+                        .padding(15)
                 }
                 .background(Color("HeaderColor"))
                 .foregroundColor(Color.white)
@@ -90,8 +90,8 @@ struct ExpandableFAB : View {
                 } label: {
                     Image(systemName: "list.bullet")
                         .resizable()
-                        .frame(width: 35, height: 25)
-                        .padding(18)
+                        .frame(width: 18, height: 18)
+                        .padding(15)
                 }
                 .background(Color("HeaderColor"))
                 .foregroundColor(Color.white)
@@ -103,8 +103,8 @@ struct ExpandableFAB : View {
             } label: {
                 Image(systemName: "chevron.up")
                     .resizable()
-                    .frame(width: 25, height: 15)
-                    .padding(22)
+                    .frame(width: 20, height: 18)
+                    .padding(15)
             }
             .background(Color("HeaderColor"))
             .foregroundColor(Color.white)

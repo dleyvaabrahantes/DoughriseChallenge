@@ -23,6 +23,7 @@ struct ListCategories: View {
             ScrollView{
                 ForEach(lists, id: \.id) { category in
                     CategorieView(categorie: category)
+                        .padding(.top)
                 }
             }
             .id(UUID())

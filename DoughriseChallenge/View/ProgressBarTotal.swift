@@ -37,5 +37,8 @@ struct ProgressBarTotal_Previews: PreviewProvider {
         ProgressBarTotal(array: [CategorieValueTotal(id: UUID().uuidString, value: 0.3, color: "Blue"),
                                  CategorieValueTotal(id: UUID().uuidString, value: 0.2, color: "Yellow"),
                                  CategorieValueTotal(id: UUID().uuidString, value: 0.1, color: "Red"),])
+        .cornerRadius(8)
+        .frame(height: 32)
+        .padding(.horizontal)
     }
 }

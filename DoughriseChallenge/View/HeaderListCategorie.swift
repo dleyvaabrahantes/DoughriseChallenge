@@ -16,49 +16,56 @@ struct HeaderListCategorie: View {
         VStack(alignment: .center){
             HStack {
                 Text("April 2022")
-                    .font(.callout)
-                    .foregroundColor(.green)
+                    .font(.system(size: 13))
+                    .foregroundColor(Color("Green"))
                     Image("Polygon")
             }
             .padding(5)
             
             .background {
-                Color.green.opacity(0.2)
+                Color("Green").opacity(0.2)
         }
             .clipShape(RoundedRectangle(cornerRadius: 8))
             
             VStack{
-                HStack(spacing: 10){
+                HStack(spacing: 20){
                     VStack{
                         Text("Spend")
+                            .font(.system(size: 16))
+                            .foregroundColor(Color("Gray"))
                         Text("$\(lists.reduce(0){$0 + $1.spent})")
-                            .font(.title)
+                            .font(.system(size: 21))
                     }
                     
                     Divider()
-                        .frame(width: 1,height: 20)
-                        .overlay(.black)
+                        .frame(width: 1,height: 30)
+                        .overlay(Color("Gray"))
                     
                     VStack{
                         Text("Available")
+                            .font(.system(size: 16))
+                            .foregroundColor(Color("Gray"))
                         Text("$\(calculateAvailable())")
-                            .font(.title)
-                            .foregroundColor(.green)
+                            .font(.system(size: 21))
+                            .foregroundColor(Color("Green"))
                     }
                     
                    // .padding()
                     Divider()
-                        .frame(width: 1,height: 20)
-                        .overlay(.black)
+                        .frame(width: 1,height: 30)
+                        .overlay(Color("Gray"))
                     VStack{
                         Text("Budget")
+                            .font(.system(size: 16))
+                            .foregroundColor(Color("Gray"))
                         Text("$\(lists.reduce(0) { $0 + $1.total })")
-                            .font(.title)
+                            .font(.system(size: 21))
                     }
                    
                 }
                 .padding(.horizontal)
             }
+            .padding(.top)
         }
     }
     
